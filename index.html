@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌤 Weather Forecast</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id="appBody" class="min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 text-white flex flex-col items-center transition-all duration-700">
+
+  <!-- Header -->
+  <header class="w-full max-w-5xl mt-8 px-6 flex justify-between items-center">
+    <h1 class="text-3xl font-bold tracking-wide">🌤 Weather Forecast</h1>
+    <div class="flex gap-3">
+      <button id="themeToggle" class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-xl">🌙</button>
+      <button id="unitToggle" class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-xl">°C / °F</button>
+    </div>
+  </header>
+
+  <!-- Search Section -->
+  <section class="mt-6 w-full max-w-3xl flex gap-3">
+    <input id="cityInput" type="text" placeholder="Enter city name..." class="flex-grow px-4 py-2 rounded-xl text-gray-900 focus:outline-none">
+    <button id="searchBtn" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl font-semibold">Search</button>
+    <button id="locationBtn" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-xl font-semibold">📍</button>
+  </section>
+
+  <!-- Recent Search Dropdown -->
+  <div class="mt-3">
+    <select id="recentSelect" class="bg-black/20 text-black px-3 py-2 rounded-xl hidden"></select>
+  </div>
+
+  <!-- Alert Area -->
+  <div id="alertBox" class="hidden mt-4 px-6 py-3 rounded-xl bg-red-500/80 text-white shadow-lg animate-fadeIn"></div>
+
+  <!-- Current Weather Card -->
+  <section id="currentWeather" class="mt-8 w-full max-w-md p-6 bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl text-center opacity-0 transition duration-700"></section>
+
+  <!-- 5-Day Forecast -->
+  <section id="forecast" class="mt-8 w-full max-w-5xl flex gap-4 overflow-x-auto px-4 pb-4"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>

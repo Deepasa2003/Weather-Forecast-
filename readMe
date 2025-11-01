@@ -1,0 +1,47 @@
+# 🌤 Weather Forecast
+
+A modern glassmorphic weather forecast web app built using **HTML, Tailwind CSS, and JavaScript**.  
+This project implements all features required in the assignment (worth 200 marks).
+
+---
+
+## 🧠 Features
+✅ Fetch weather by **city name**  
+✅ Fetch weather using **current location (Geolocation API)**  
+✅ **5-day forecast** with temperature, humidity, wind speed  
+✅ **Dynamic background** based on weather condition  
+✅ **Temperature toggle** (°C / °F)  
+✅ **Dark / Light theme toggle**  
+✅ **Recent search dropdown** (stored using localStorage)  
+✅ **Custom alerts** (high temperature, rain)  
+✅ **Animated UI** using Tailwind transitions  
+✅ **Error messages** shown with styled alerts (no JS alerts)
+
+---
+
+## 🧰 Technologies
+- **HTML5**
+- **Tailwind CSS (CDN)**
+- **Vanilla JavaScript**
+- **OpenWeather API**
+
+---
+
+## 🚀 How to Run
+1. Download the project folder.
+2. Replace your OpenWeather API key in `script.js`.
+3. Open `index.html` in your browser.
+
+---
+
+## 📷 UI Highlights
+- Blue–Purple gradient glassmorphism theme.
+- Horizontal scrollable forecast cards.
+- Smooth fade-in animations.
+- Responsive for both desktop and mobile.
+
+---
+
+## 📜 Author
+**Deepa Angadi**  
+Weather Forecast Project – 2025
